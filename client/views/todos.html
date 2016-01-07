@@ -1,0 +1,4 @@
+<input type="text" placeholder="Crée" ng-model="toto_new"><input type="submit" value="crée" ng-click="createTodo()">
+<ul ng-repeat="todo in list_todo">
+    <li ng-click="removeTodo(todo.id, $index)">{{todo.name}}</li>
+</ul>
